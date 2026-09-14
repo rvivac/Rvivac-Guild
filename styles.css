@@ -575,7 +575,17 @@ body {
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text-primary);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.15rem;
+}
+
+.category-subtitle-lead {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--rviv-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.45rem;
 }
 
 .category-desc {
@@ -854,6 +864,28 @@ body {
   color: var(--text-secondary);
   border-left: 2px solid var(--rviv-blue);
   padding-left: 1.5rem;
+}
+
+.manifesto-callout {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.4rem;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 8px;
+  margin-top: 2.25rem;
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 1.4vw, 1.0625rem);
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  backdrop-filter: blur(8px);
+}
+
+.manifesto-callout .callout-icon {
+  color: var(--rviv-cyan);
+  font-size: 0.9rem;
 }
 
 .model-pillars {
