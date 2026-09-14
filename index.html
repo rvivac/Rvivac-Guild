@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rvivac Guild — Tecnologia para resolver problemas reais</title>
+  <meta name="description" content="IA, automação e desenvolvimento sob medida para empresas. Estúdio técnico focado em engenharia de software e soluções precisas.">
+  <meta name="theme-color" content="#16191f">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rvivac Guild — Tecnologia para resolver problemas reais">
+  <meta property="og:description" content="IA, automação e desenvolvimento sob medida para empresas.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/png" href="logo.png">
+
+  <!-- Typography: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Brand Intro Splash Screen (Lovable Spin & Greet Animation) -->
+  <aside id="brand-splash" class="brand-splash" aria-label="Apresentação animada RVIVAC GUILD">
+    <div class="brand-splash-inner">
+      <div class="animated-logo" role="img" aria-label="Logotipo animado RVIVAC GUILD">
+        <div class="brand-slice brand-symbol" aria-hidden="true">
+          <img src="symbol.png" alt="" draggable="false">
+        </div>
+        <div class="brand-slice brand-name" aria-hidden="true">
+          <img src="text-rvivac.png" alt="" draggable="false">
+        </div>
+        <div class="brand-slice brand-guild" aria-hidden="true">
+          <img src="text-guild.png" alt="" draggable="false">
+        </div>
+      </div>
+    </div>
+    <button type="button" class="splash-skip" id="splash-skip" aria-label="Pular introdução">
+      <span>Pular</span>
+      <kbd>ESC</kbd>
+    </button>
+  </aside>
+
+  <!-- Background Layers: Cinza Chumbo & Textura de Engrenagens -->
+  <div class="gears-texture-bg" aria-hidden="true"></div>
+  <div class="gears-vignette" aria-hidden="true"></div>
+  <div class="ambient-gears-cluster" aria-hidden="true">
+    <div class="ambient-gear ambient-gear-1"></div>
+    <div class="ambient-gear ambient-gear-2"></div>
+    <div class="ambient-gear ambient-gear-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Rvivac Guild Início">
+        <img src="logo.png" alt="Rvivac Guild" class="brand-logo" width="162" height="162">
+        <div class="brand-text">
+          <span class="brand-name">RVIVAC</span>
+          <span class="brand-guild">GUILD</span>
+        </div>
+      </a>
+
+      <nav class="header-nav" aria-label="Navegação rápida">
+        <a href="#solucoes" class="nav-link">Soluções</a>
+        <a href="#modelo" class="nav-link">O Modelo</a>
+        <a href="#para-quem" class="nav-link">Para Quem</a>
+      </nav>
+
+      <div class="header-status" aria-label="Status do estúdio">
+        <span class="status-indicator"></span>
+        <span class="status-text">Disponível para novos projetos</span>
+      </div>
+
+      <a href="#contato" class="header-cta" id="nav-cta">Fale conosco</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- 1. HERO -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="mono-tag">01 // SOLUÇÕES PADRONIZADAS</span>
+            <span class="pill-divider">·</span>
+            <span class="pill-competencies">Web · Automações · Ferramentas · IA</span>
+          </div>
+
+          <h1 class="hero-title">Tecnologia para resolver problemas reais.</h1>
+
+          <p class="hero-subtitle">Desenvolvemos soluções padronizadas de software, automação e inteligência artificial prontas para implantar. Você paga pelo resultado e pela solução entregue — não por horas de reunião.</p>
+
+          <div class="hero-badges" aria-label="Diferenciais do estúdio">
+            <span class="hero-badge"><span class="badge-icon">⚡</span> Implantação rápida</span>
+            <span class="hero-badge"><span class="badge-icon">📦</span> Preço fixo por solução</span>
+            <span class="hero-badge"><span class="badge-icon">⚙️</span> Mínima intervenção</span>
+          </div>
+
+          <div class="hero-action-row">
+            <a href="#solucoes" class="btn btn-primary" id="hero-cta">
+              <span>Explorar soluções</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#modelo" class="btn btn-ghost" id="hero-ghost-cta">
+              <span>Como funciona</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Abstract System Architecture Topology Canvas -->
+          <div class="canvas-wrapper">
+            <canvas id="architecture-canvas" aria-label="Estrutura de arquitetura de nós"></canvas>
+            <div class="canvas-caption">
+              <span class="mono-micro">SYS.TOPOLOGY // ARCHITECTURE V4</span>
+              <span class="pulse-dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CATÁLOGO DE SOLUÇÕES PADRONIZADAS -->
+    <section id="solucoes" class="section solutions-section">
+      <div class="container">
+        <div class="section-label">
+          <span class="mono-tag">02 // CATÁLOGO DE SOLUÇÕES</span>
+        </div>
+
+        <div class="section-intro">
+          <h2 class="section-heading">Soluções padronizadas. Entrega direta.</h2>
+          <p class="section-lead">Desenvolvemos soluções padronizadas que resolvem determinado problema operacional e exigem pouca intervenção da sua equipe e da nossa.</p>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Solução 1: Landing Pages -->
+          <article class="solution-card">
+            <div class="solution-card-header">
+              <span class="solution-code">[SOL-01]</span>
+              <span class="solution-tag">Landing Page</span>
+            </div>
+            <h3 class="solution-card-title">Landing pages altamente padronizadas</h3>
+            <p class="solution-card-desc">Estruturas modulares de alta conversão, carregamento ultraveloz e design técnico refinado para captar leads e vender sem atritos.</p>
+            <div class="solution-card-footer">
+              <span class="solution-benefit">Alta conversão · Score 95+</span>
+              <button type="button" class="solution-action-btn" data-solution="landing-page" aria-label="Solicitar Landing page altamente padronizada">
+                <span>Solicitar</span>
+                <span class="action-arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Solução 2: Sites Institucionais -->
+          <article class="solution-card">
+            <div class="solution-card-header">
+              <span class="solution-code">[SOL-02]</span>
+              <span class="solution-tag">Institucional</span>
+            </div>
+            <h3 class="solution-card-title">Sites institucionais simples & objetivos</h3>
+            <p class="solution-card-desc">Presença digital profissional e sem código inchado. Comunicação clara da sua autoridade, posicionamento e canais de contato diretos.</p>
+            <div class="solution-card-footer">
+              <span class="solution-benefit">Autoridade · Sem manutenção pesada</span>
+              <button type="button" class="solution-action-btn" data-solution="site-institucional" aria-label="Solicitar Site institucional simples">
+                <span>Solicitar</span>
+                <span class="action-arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Solução 3: Sistemas Pequenos -->
+          <article class="solution-card">
+            <div class="solution-card-header">
+              <span class="solution-code">[SOL-03]</span>
+              <span class="solution-tag">Sistemas Web</span>
+            </div>
+            <h3 class="solution-card-title">Sistemas pequenos e específicos</h3>
+            <p class="solution-card-desc">Aplicações cirúrgicas criadas sob medida para eliminar exatamente um gargalo operacional crítico da sua rotina de negócios.</p>
+            <div class="solution-card-footer">
+              <span class="solution-benefit">Foco cirúrgico · Resolução de gargalo</span>
+              <button type="button" class="solution-action-btn" data-solution="sistema-especifico" aria-label="Solicitar Sistema pequeno e específico">
+                <span>Solicitar</span>
+                <span class="action-arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Solução 4: Automações -->
+          <article class="solution-card">
+            <div class="solution-card-header">
+              <span class="solution-code">[SOL-04]</span>
+              <span class="solution-tag">Automação & RPA</span>
+            </div>
+            <h3 class="solution-card-title">Automações de processos e rotinas</h3>
+            <p class="solution-card-desc">Conexão transparente entre CRMs, planilhas, bancos de dados, WhatsApp e APIs para eliminar trabalho manual repetitivo.</p>
+            <div class="solution-card-footer">
+              <span class="solution-benefit">Zero retrabalho · 24/7 ativo</span>
+              <button type="button" class="solution-action-btn" data-solution="automacao" aria-label="Solicitar Automação de processos">
+                <span>Solicitar</span>
+                <span class="action-arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Solução 5: Ferramentas Internas -->
+          <article class="solution-card">
+            <div class="solution-card-header">
+              <span class="solution-code">[SOL-05]</span>
+              <span class="solution-tag">Operação Interna</span>
+            </div>
+            <h3 class="solution-card-title">Ferramentas internas e dashboards</h3>
+            <p class="solution-card-desc">Painéis de controle, geradores internos e utilitários que dão visibilidade aos dados e destravam a produtividade da sua equipe.</p>
+            <div class="solution-card-footer">
+              <span class="solution-benefit">Visibilidade operacional · Autonomia</span>
+              <button type="button" class="solution-action-btn" data-solution="ferramenta-interna" aria-label="Solicitar Ferramenta interna">
+                <span>Solicitar</span>
+                <span class="action-arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Solução 6: Soluções de IA -->
+          <article class="solution-card">
+            <div class="solution-card-header">
+              <span class="solution-code">[SOL-06]</span>
+              <span class="solution-tag">Inteligência Artificial</span>
+            </div>
+            <h3 class="solution-card-title">Soluções de IA com implantação quase automática</h3>
+            <p class="solution-card-desc">Assistentes de triagem, agentes para atendimento, análise inteligente de documentos e fluxos cognitivos pré-construídos para plugar rápido.</p>
+            <div class="solution-card-footer">
+              <span class="solution-benefit">Plug & Play · IA Prática</span>
+              <button type="button" class="solution-action-btn" data-solution="ia-imediata" aria-label="Solicitar Solução de IA">
+                <span>Solicitar</span>
+                <span class="action-arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Solução 7: Conteúdo Automatizado -->
+          <article class="solution-card">
+            <div class="solution-card-header">
+              <span class="solution-code">[SOL-07]</span>
+              <span class="solution-tag">Geração de Dados</span>
+            </div>
+            <h3 class="solution-card-title">Geração automatizada de conteúdo</h3>
+            <p class="solution-card-desc">Pipelines automatizados para geração de relatórios periódicos, catálogos, documentações técnicas e comunicações com base em dados operacionais.</p>
+            <div class="solution-card-footer">
+              <span class="solution-benefit">Escala sem esforço · Precisão</span>
+              <button type="button" class="solution-action-btn" data-solution="geracao-conteudo" aria-label="Solicitar Geração automatizada de conteúdo">
+                <span>Solicitar</span>
+                <span class="action-arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Solução 8: Produtos Digitais -->
+          <article class="solution-card">
+            <div class="solution-card-header">
+              <span class="solution-code">[SOL-08]</span>
+              <span class="solution-tag">Micro-SaaS & Assets</span>
+            </div>
+            <h3 class="solution-card-title">Produtos digitais e utilitários prontos</h3>
+            <p class="solution-card-desc">Aplicações funcionais autônomas e microsserviços concebidos para gerar valor contínuo e operar com estabilidade e independência.</p>
+            <div class="solution-card-footer">
+              <span class="solution-benefit">Operação autônoma · Alto valor</span>
+              <button type="button" class="solution-action-btn" data-solution="produto-digital" aria-label="Solicitar Produto digital">
+                <span>Solicitar</span>
+                <span class="action-arrow">→</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. O MODELO RVIVAC -->
+    <section id="modelo" class="section philosophy-section">
+      <div class="container">
+        <div class="section-label">
+          <span class="mono-tag">03 // O MODELO DE ENTREGA</span>
+        </div>
+
+        <div class="philosophy-content">
+          <h2 class="philosophy-primary">Você paga pela solução entregue, não pelo tempo gasto.</h2>
+          <p class="philosophy-secondary">O modelo tradicional de desenvolvimento vende reuniões intermináveis e horas faturadas. Nós invertemos essa lógica: entregamos soluções técnicas padronizadas com escopo fechado, implantação ágil e mínima necessidade de intervenção futura.</p>
+        </div>
+
+        <div class="model-pillars">
+          <div class="model-pillar-card">
+            <div class="pillar-index">01</div>
+            <h3 class="pillar-title">Escopo & Preço Fechado</h3>
+            <p class="pillar-desc">Você sabe exatamente quanto vai investir e o que vai receber antes do início. Sem surpresas orçamentárias ou contadores de horas correndo.</p>
+          </div>
+
+          <div class="model-pillar-card">
+            <div class="pillar-index">02</div>
+            <h3 class="pillar-title">Baixa Intervenção Operacional</h3>
+            <p class="pillar-desc">Projetamos arquiteturas enxutas e sólidas feitas para rodar no piloto automático, sem exigir acompanhamento diário ou manutenção pesada.</p>
+          </div>
+
+          <div class="model-pillar-card">
+            <div class="pillar-index">03</div>
+            <h3 class="pillar-title">Implantação Quase Automática</h3>
+            <p class="pillar-desc">Com padrões de engenharia bem estruturados e fluxos modernos de deploy, colocamos sua solução no ar em dias, não em meses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PARA QUEM -->
+    <section id="para-quem" class="section audience-section">
+      <div class="container">
+        <div class="section-label">
+          <span class="mono-tag">04 // PÚBLICO</span>
+        </div>
+
+        <div class="audience-layout">
+          <h2 class="audience-title">Para empresas que querem resolver gargalos sem inchar a equipe.</h2>
+          <div class="audience-body">
+            <p class="audience-text">Ajudamos pequenas e médias empresas, fundadores e líderes operacionais a destravarem rotinas críticas. Se você quer resultado prático e código de alto nível sem a lentidão ou os custos inflados de agências convencionais, o modelo de soluções padronizadas foi feito para a sua operação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CTA FINAL -->
+    <section id="contato" class="section final-cta-section">
+      <div class="container">
+        <div class="section-label">
+          <span class="mono-tag">05 // CONTATO</span>
+        </div>
+
+        <div class="cta-box">
+          <div class="cta-header">
+            <h2 class="cta-headline">Tem um problema que poderia ser resolvido melhor?</h2>
+            <p class="cta-lead">Vamos conversar.</p>
+          </div>
+
+          <div class="cta-actions">
+            <button type="button" class="btn btn-primary btn-large" id="open-contact-btn">
+              <span>Falar com a Rvivac Guild</span>
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="quick-channels">
+            <span class="quick-label">Canais diretos:</span>
+            <div class="channel-links">
+              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20com%20a%20Rvivac%20Guild." target="_blank" rel="noopener noreferrer" class="channel-link" id="whatsapp-direct">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.77.814 2.796.814 3.18 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.141.398-.716.762-1.026.81-.301.047-.694.067-1.127-.072-.271-.087-.624-.207-1.077-.404-1.921-.837-3.167-2.775-3.263-2.904-.096-.129-.779-1.037-.779-1.977 0-.94.492-1.401.666-1.593.175-.192.382-.24.509-.24.128 0 .255.001.367.007.118.006.276-.045.431.328.16.384.545 1.33.593 1.427.048.096.08.208.016.336-.064.128-.096.208-.192.32-.096.112-.201.25-.288.336-.096.096-.197.2-.085.392.112.192.498.822 1.07 1.332.736.655 1.357.858 1.549.954.192.096.304.08.416-.048.112-.128.48-.56.608-.752.128-.192.256-.16.432-.096.176.064 1.12.528 1.312.624.192.096.32.144.368.224.048.08.048.464-.093.862zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.174L2 22l4.962-1.399A9.956 9.956 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+                WhatsApp
+              </a>
+              <span class="channel-sep">/</span>
+              <button type="button" class="channel-copy-btn" id="copy-email-btn" title="Copiar e-mail">
+                <span id="copy-email-text">contato@rvivacguild.com</span>
+                <span class="copy-badge" id="copy-feedback">Copiar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact Modal Dialog -->
+  <dialog id="contact-dialog" class="contact-modal" aria-labelledby="dialog-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="mono-micro">// DIRECT TRANSMISSION</span>
+          <h3 id="dialog-title" class="modal-title">Iniciar conversa</h3>
+        </div>
+        <button type="button" class="modal-close" id="close-dialog-btn" aria-label="Fechar modal">✕</button>
+      </div>
+
+      <p class="modal-subtitle">Sem burocracia ou intermediários. Conte-nos sucintamente qual é o desafio da sua operação.</p>
+
+      <form id="contact-form" class="modal-form">
+        <div class="form-group">
+          <label for="client-name" class="form-label">Seu nome ou empresa</label>
+          <input type="text" id="client-name" name="name" class="form-input" placeholder="Ex: Roberto / Nexus Log" required>
+        </div>
+
+        <div class="form-group">
+          <label for="client-contact" class="form-label">E-mail ou WhatsApp</label>
+          <input type="text" id="client-contact" name="contact" class="form-input" placeholder="contato@empresa.com ou (11) 9..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="client-solution" class="form-label">Solução de interesse</label>
+          <select id="client-solution" name="solution" class="form-select">
+            <option value="geral">Outro desafio / Não tenho certeza ainda</option>
+            <option value="landing-page">[SOL-01] Landing page altamente padronizada</option>
+            <option value="site-institucional">[SOL-02] Site institucional simples & objetivo</option>
+            <option value="sistema-especifico">[SOL-03] Sistema pequeno e específico</option>
+            <option value="automacao">[SOL-04] Automações de processos e rotinas</option>
+            <option value="ferramenta-interna">[SOL-05] Ferramentas internas e dashboards</option>
+            <option value="ia-imediata">[SOL-06] Soluções de IA com implantação quase automática</option>
+            <option value="geracao-conteudo">[SOL-07] Geração automatizada de conteúdo</option>
+            <option value="produto-digital">[SOL-08] Produtos digitais e utilitários prontos</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="client-message" class="form-label">Qual problema você gostaria de resolver?</label>
+          <textarea id="client-message" name="message" class="form-textarea" rows="4" placeholder="Ex: Precisamos integrar nosso CRM aos dados do armazém e automatizar relatórios com IA..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+            <span>Enviar mensagem direta</span>
+          </button>
+        </div>
+
+        <div id="form-success-msg" class="form-success hidden">
+          ✓ Recebido com sucesso. Retornaremos em menos de 24h úteis.
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-logo-row">
+          <img src="logo.png" alt="Rvivac Guild" width="22" height="22" class="footer-logo">
+          <span class="footer-name">RVIVAC GUILD</span>
+        </div>
+        <p class="footer-tagline">Engenharia de software, automação e inteligência aplicada.</p>
+      </div>
+
+      <div class="footer-right">
+        <span class="footer-meta">© <span id="curr-year">2026</span> Rvivac Guild. Todos os direitos reservados.</span>
+        <div class="footer-details">
+          <span class="footer-cnpj">CNPJ: 52.297.021/0001-14</span>
+          <span class="footer-sep">·</span>
+          <span class="footer-location">São Paulo, SP · Brasil</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
