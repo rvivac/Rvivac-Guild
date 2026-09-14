@@ -294,7 +294,7 @@ function initContactInteractions() {
   // Cópia de E-mail com feedback instantâneo
   if (copyEmailBtn && copyFeedback) {
     copyEmailBtn.addEventListener('click', async () => {
-      const email = 'contato@rvivacguild.com';
+      const email = 'rvivac.guild@gmail.com';
       try {
         await navigator.clipboard.writeText(email);
         copyFeedback.textContent = 'Copiado!';
