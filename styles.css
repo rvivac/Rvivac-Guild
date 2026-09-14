@@ -728,6 +728,21 @@ body {
   box-shadow: 0 16px 36px rgba(56, 189, 248, 0.16);
 }
 
+.demand-card-wrapper {
+  width: 100%;
+}
+
+.demand-highlight-card {
+  max-width: 100%;
+  border-color: rgba(56, 189, 248, 0.22);
+  background: linear-gradient(180deg, rgba(30, 36, 46, 0.90) 0%, rgba(20, 24, 31, 0.97) 100%);
+}
+
+.demand-highlight-card:hover {
+  border-color: var(--rviv-cyan);
+  box-shadow: 0 16px 40px rgba(56, 189, 248, 0.16);
+}
+
 .featured-card-header {
   display: flex;
   align-items: center;
